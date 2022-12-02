@@ -12,7 +12,8 @@ html, body {
     height:98%;
     font-family:Verdana;
     font-size:11px;
-    background-image:url('https://neothemes.neocities.org/images/roses-bg.gif');
+    background-color: #0C090A;
+    /*background-image:url('https://neothemes.neocities.org/images/roses-bg.gif');*/
     background-repeat:repeat;
     color:var(--dkest-color);
     padding:1px;
@@ -180,7 +181,7 @@ ul.subitems li a {
     margin-bottom:5px;
 }
 #footer p {
-    background-color:white;
+    background-color:var(--dk-color);
     display:block;
     width:160px;
     margin:0 auto;
