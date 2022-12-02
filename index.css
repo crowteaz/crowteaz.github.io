@@ -1,9 +1,12 @@
 :root {
-    --dk-color:#413839;
-    --mid-color:#565051;
-    --lt-color:#736F6E;
+    /*--dk-color:#413839;*/
+    --dk-color:black;
+    /*--mid-color:#565051;*/
+    --mid-color:black;
+    /*--lt-color:#736F6E;*/
+    --lt-color:black;
     --dkest-color:#E5E4E2;
-    --accent:#C9C0BB;
+    --accent:red;
 }
 html, body {
     margin:0;
@@ -12,8 +15,8 @@ html, body {
     height:98%;
     font-family:Verdana;
     font-size:11px;
-    background-color: #0C090A;
-    /*background-image:url('https://neothemes.neocities.org/images/roses-bg.gif');*/
+    background-color: var(--dk-color);
+    background-image:url('img/other/eye.jpeg');
     background-repeat:repeat;
     color:var(--dkest-color);
     padding:1px;
@@ -65,9 +68,9 @@ h2, h4, h6 {
     text-align:center;
 }
 .title {
-    font-size:35px;
     text-align:center;
-    font-style:italic;
+    align-items: center;
+    font-style:bold;
     color:var(--dkest-color);
 }
 .section-title {
@@ -110,13 +113,17 @@ p a {
 }
 .scroll::-webkit-scrollbar-track {
     background-color: var(--lt-color);
+    opacity: 0%;
 }
 .scroll::-webkit-scrollbar {
     width: 10px;
-    background-color: #f2b1a4;
+    background-color: var(--mid-color);
 }
 .scroll::-webkit-scrollbar-thumb {
     background-color: var(--dk-color);
+    outline-color: var(--dkest-color);
+    outline-style: solid;
+    outline-width: 1px;
 }
 .navbar li {
     position: relative;
